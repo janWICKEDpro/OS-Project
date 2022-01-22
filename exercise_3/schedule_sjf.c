@@ -74,6 +74,16 @@ void turnAroundTime(){
     printf("The average turn around time is %f", (float)(sum/length()));
 }
 
+//response time
+float responseTime(){
+    int sum =0;
+    int len = length();
+    for(int i=0; i<len; i++){
+        sum+=WT[i];
+    }
+    return (float)(sum/len);
+}
+
 // invoke the scheduler
 void schedule(){
     struct node *shortest = list;

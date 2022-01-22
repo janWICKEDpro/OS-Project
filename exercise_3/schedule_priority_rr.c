@@ -112,6 +112,16 @@ struct node *temp = copyList;
     printf("The average turn around time is %f", (float)(sum/length()));
 }
 
+// response time
+float responseTime(){
+    int sum =0;
+    int len = length();
+    for(int i=0; i<len; i++){
+        sum+=WT[i];
+    }
+    return (float)(sum/len);
+}
+
 void sendToEnd(struct node **l,struct node *e){
     struct node *temp = *l;
     while(temp->next !=NULL){
