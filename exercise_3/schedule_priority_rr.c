@@ -35,7 +35,7 @@ void add(char *name, int priority, int burst){
 
 
 
-
+//insert a scheduled task into the scheduled list;
 void s(char *name, int priority, int burst,int ids){
     Task *task;
     

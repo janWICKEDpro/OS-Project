@@ -80,7 +80,7 @@ void turnAroundTime(){
     printf("The average turn around time is %f", (float)(sum/length()));
 }
 
-//response time
+//response time = Waiting time
 float responseTime(){
     int sum =0;
     int len = length();
